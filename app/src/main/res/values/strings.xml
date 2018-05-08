@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Todo</string>
+
+    <string name="fragment_todo_list">FragmentTodoList</string>
+    <string name="fragment_todo">FragmentTodo</string>
+    <string name="fragment_add_todo">FragmentAddTodo</string>
+
 </resources>
