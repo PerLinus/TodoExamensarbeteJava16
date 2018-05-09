@@ -22,9 +22,7 @@ import nilsson83.linus.todo.models.Todo;
 import nilsson83.linus.todo.viewModels.AddTodoViewModel;
 import nilsson83.linus.todo.viewModels.TodoListViewModel;
 
-/**
- * Created by Linus on 2018-05-04.
- */
+
 
 public class FragmentTodoList extends Fragment implements View.OnClickListener {
 

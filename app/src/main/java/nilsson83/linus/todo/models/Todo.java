@@ -4,9 +4,7 @@ import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 
 
-/**
- * Created by s060qm on 3/7/2018.
- */
+
 @Entity
 public class Todo {
 

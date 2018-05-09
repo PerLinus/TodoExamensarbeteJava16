@@ -8,9 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * Created by Linus on 2018-05-06.
- */
 
 public class FragmentAddTodo extends Fragment {
 

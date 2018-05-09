@@ -16,9 +16,6 @@ import java.util.List;
 import nilsson83.linus.todo.models.Todo;
 import nilsson83.linus.todo.viewModels.TodoListViewModel;
 
-/**
- * Created by Linus on 2018-05-06.
- */
 
 public class FragmentTodo extends Fragment {
 

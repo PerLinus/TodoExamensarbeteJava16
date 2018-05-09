@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import nilsson83.linus.todo.adapters.ViewPagerAdapter;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
