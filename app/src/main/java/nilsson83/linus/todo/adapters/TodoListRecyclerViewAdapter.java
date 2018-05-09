@@ -13,7 +13,7 @@ import nilsson83.linus.todo.R;
 import nilsson83.linus.todo.models.Todo;
 
 /**
- * Created by Linus on 2018-05-05.
+ * This class is used to handle displaying the lists in the app.
  */
 
 public class TodoListRecyclerViewAdapter extends RecyclerView.Adapter<TodoListRecyclerViewAdapter.TodoListAdapterViewHolder> {
@@ -22,11 +22,17 @@ public class TodoListRecyclerViewAdapter extends RecyclerView.Adapter<TodoListRe
 
     private View.OnClickListener clickHandler;
 
+    /**
+     * Constructor sets the list of todos and adds a clickhandler.
+     * @param todos
+     * @param clickHandler
+     */
     public TodoListRecyclerViewAdapter(List<Todo> todos, View.OnClickListener clickHandler) {
 
         this.todos = todos;
         this.clickHandler = clickHandler;
     }
+
 
     @NonNull
     @Override

@@ -13,10 +13,11 @@ import nilsson83.linus.todo.models.Todo;
 import static android.arch.persistence.room.OnConflictStrategy.REPLACE;
 
 /**
- * Created by s060qm on 3/19/2018.
+ * A Data Access Object. Defines database interactions. At
+ * compile time, Room(a librabry for handling SQLite databases)
+ * will generate an implementation of this
+ * class when it is referenced by a Database.
  */
-
-
 @Dao
 public interface TodoDao {
 

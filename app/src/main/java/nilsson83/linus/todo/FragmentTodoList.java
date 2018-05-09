@@ -28,8 +28,6 @@ import nilsson83.linus.todo.viewModels.TodoListViewModel;
 
 public class FragmentTodoList extends Fragment implements View.OnClickListener {
 
-    private static final String TAG = "SelectorFragment";
-
     View view;
     private TodoListViewModel viewModel;
     private RecyclerView recyclerView;

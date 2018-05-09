@@ -18,6 +18,10 @@ public class AddTodoViewModel extends AndroidViewModel {
 
     private TodoRoomDatabase todoRoomDatabase;
 
+    /**
+     * Constructor establishes connection with the database
+     * @param application
+     */
     public AddTodoViewModel(@NonNull Application application) {
         super(application);
 

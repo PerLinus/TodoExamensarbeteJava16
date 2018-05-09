@@ -12,7 +12,7 @@ import nilsson83.linus.todo.models.Todo;
 import nilsson83.linus.todo.sqlite.TodoRoomDatabase;
 
 /**
- * Created by s060qm on 3/19/2018.
+ *
  */
 
 public class TodoListViewModel extends AndroidViewModel {
@@ -22,6 +22,11 @@ public class TodoListViewModel extends AndroidViewModel {
 
     private TodoRoomDatabase todoRoomDatabase;
 
+    /**
+     * Constructor fetches all todoLists from the database
+     * and populate the LiveData List with them.
+     * @param application
+     */
     public TodoListViewModel(@NonNull Application application) {
         super(application);
 
