@@ -68,7 +68,7 @@ public class TodoListRecyclerViewAdapter extends RecyclerView.Adapter<TodoListRe
 
         TodoListAdapterViewHolder(View itemView) {
             super(itemView);
-            textViewTodoListItem = (TextView) itemView.findViewById(R.id.textView_todo_list_item);
+            textViewTodoListItem = (TextView) itemView.findViewById(R.id.textViewTodoListItem);
         }
     }
 

@@ -3,10 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:id="@+id/todo_item">
+    android:id="@+id/todoItem">
 
     <TextView
-        android:id="@+id/textView_todo_list_item"
+        android:id="@+id/textViewTodoListItem"
         style="@style/TextAppearance.AppCompat.Large"
         android:background="@drawable/roundedbutton"
         android:textColor="@color/colorWhite"

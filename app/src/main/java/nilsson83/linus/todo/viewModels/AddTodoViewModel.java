@@ -10,10 +10,6 @@ import nilsson83.linus.todo.models.Todo;
 import nilsson83.linus.todo.sqlite.TodoRoomDatabase;
 
 
-/**
- * Created by s060qm on 3/20/2018.
- */
-
 public class AddTodoViewModel extends AndroidViewModel {
 
     private TodoRoomDatabase todoRoomDatabase;

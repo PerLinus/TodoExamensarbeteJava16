@@ -6,13 +6,13 @@
     android:background="@drawable/activity_passwords_background">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerView_todoList"
+        android:id="@+id/recyclerViewTodoList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab_create_todo"
+        android:id="@+id/fabCreateTodo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"

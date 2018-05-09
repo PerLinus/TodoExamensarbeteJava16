@@ -1,24 +1,13 @@
 package nilsson83.linus.todo;
 
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProviders;
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
-import android.widget.ProgressBar;
 
-
-import java.util.ArrayList;
-import java.util.List;
 
 import nilsson83.linus.todo.adapters.TodoListRecyclerViewAdapter;
-import nilsson83.linus.todo.models.Todo;
 import nilsson83.linus.todo.viewModels.TodoListViewModel;
 
 public class TodoListActivity extends AppCompatActivity implements ITodoListActivity {
@@ -43,7 +32,7 @@ public class TodoListActivity extends AppCompatActivity implements ITodoListActi
 
     private void doFragmentTransaction(Fragment fragment, String tag, boolean addToBackStack) {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.fragment_container, fragment, tag);
+        transaction.replace(R.id.fragmentContainer, fragment, tag);
 
         if (addToBackStack) {
             transaction.addToBackStack(null);
