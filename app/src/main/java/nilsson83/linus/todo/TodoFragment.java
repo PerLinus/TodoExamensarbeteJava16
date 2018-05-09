@@ -9,6 +9,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import java.util.List;
@@ -17,12 +18,13 @@ import nilsson83.linus.todo.models.Todo;
 import nilsson83.linus.todo.viewModels.TodoListViewModel;
 
 
-public class FragmentTodo extends Fragment {
+public class TodoFragment extends Fragment {
 
     private View view;
     private TodoListViewModel viewModel;
     private Todo todo;
-    private TextView textView;
+    private EditText title;
+    private EditText content;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -35,8 +37,11 @@ public class FragmentTodo extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_todo, container, false);
-        textView = view.findViewById(R.id.text);
-        textView.setText(todo.getName());
+        title = view.findViewById(R.id.editTextTitle);
+        content = view.findViewById(R.id.editTextContent);
+        title.setText(todo.getName());
+        content.setText(todo.getTodos());
+
         return view;
     }
 }

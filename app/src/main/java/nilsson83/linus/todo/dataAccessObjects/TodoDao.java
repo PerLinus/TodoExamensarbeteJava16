@@ -26,4 +26,6 @@ public interface TodoDao {
 
     @Insert(onConflict = REPLACE)
     void addTodo(Todo todo);
+
+    //@Query("UPDATE Todo SET name=")
 }

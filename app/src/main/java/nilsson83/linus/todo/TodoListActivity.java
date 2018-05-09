@@ -26,7 +26,7 @@ public class TodoListActivity extends AppCompatActivity implements ITodoListActi
     }
 
     private void init() {
-        FragmentTodoList fragment = new FragmentTodoList();
+        TodoListFragment fragment = new TodoListFragment();
         doFragmentTransaction(fragment, getString(R.string.fragment_todo_list), false);
     }
 
@@ -59,13 +59,13 @@ public class TodoListActivity extends AppCompatActivity implements ITodoListActi
     @Override
     public void inflateFragment(String fragmentTag) {
         if (fragmentTag.equals(getString(R.string.fragment_todo_list))) {
-            FragmentTodoList fragment = new FragmentTodoList();
+            TodoListFragment fragment = new TodoListFragment();
             doFragmentTransaction(fragment, fragmentTag, true);
         } else if (fragmentTag.equals(getString(R.string.fragment_add_todo))) {
-            FragmentAddTodo fragment = new FragmentAddTodo();
+            AddTodoFragment fragment = new AddTodoFragment();
             doFragmentTransaction(fragment, fragmentTag, true);
         } else if (fragmentTag.equals(getString(R.string.fragment_todo))) {
-            FragmentTodo fragment = new FragmentTodo();
+            TodoFragment fragment = new TodoFragment();
             doFragmentTransaction(fragment, fragmentTag, true);
         }
     }

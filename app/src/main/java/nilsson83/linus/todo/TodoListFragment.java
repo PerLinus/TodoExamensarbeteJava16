@@ -22,7 +22,7 @@ import nilsson83.linus.todo.viewModels.TodoListViewModel;
 
 
 
-public class FragmentTodoList extends Fragment implements View.OnClickListener {
+public class TodoListFragment extends Fragment implements View.OnClickListener {
 
     View view;
     private TodoListViewModel viewModel;
@@ -94,22 +94,22 @@ public class FragmentTodoList extends Fragment implements View.OnClickListener {
         Fragment fragment = null;
 
         if (view.getId() == R.id.fab_create_todo) {
-            fragment = new FragmentAddTodo();
+            fragment = new AddTodoFragment();
             replaceFragment(fragment);
         } else {
             Todo todo = (Todo) view.getTag();
-            fragment = new FragmentTodo();
+            fragment = new TodoFragment();
             replaceFragment(fragment);
         }
 
        *//* switch (view.getId()) {
             case R.id.todo_item:
-                fragment = new FragmentTodo();
+                fragment = new TodoFragment();
                 replaceFragment(fragment);
                 break;
 
             case R.id.fab_create_todo:
-                fragment = new FragmentAddTodo();
+                fragment = new AddTodoFragment();
                 replaceFragment(fragment);
                 break;
         }*//*

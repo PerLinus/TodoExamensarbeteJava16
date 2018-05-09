@@ -3,30 +3,49 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/activity_shopping_list_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/text"
+    <EditText
+        android:id="@+id/editTextTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
-        android:layout_marginTop="101dp"
-        android:text="FRAAAAAAAGGGGGGGGGGGGGGGGG:)"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        android:layout_marginBottom="64dp"
+        android:layout_marginTop="147dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/editTextContent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
+    <EditText
+        android:id="@+id/editTextContent"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginTop="200dp"
-        android:text="TextView"
+        android:layout_marginBottom="134dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textColor="@color/colorWhite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTitle" />
+
+    <Button
+        android:id="@+id/addTodoButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/roundedbutton"
+        android:text="Edit"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextContent" />
 
 </android.support.constraint.ConstraintLayout>
