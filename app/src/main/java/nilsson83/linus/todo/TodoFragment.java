@@ -33,6 +33,13 @@ public class TodoFragment extends Fragment {
         todo = viewModel.getTodo();
     }
 
+    /**
+     * Creates the view with the specified todo.
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return
+     */
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

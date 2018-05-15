@@ -4,7 +4,9 @@ import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 
 
-
+/**
+ * A POJO
+ */
 @Entity
 public class Todo {
 

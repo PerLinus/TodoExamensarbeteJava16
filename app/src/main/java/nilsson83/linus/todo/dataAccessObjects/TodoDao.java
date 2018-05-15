@@ -21,9 +21,17 @@ import static android.arch.persistence.room.OnConflictStrategy.REPLACE;
 @Dao
 public interface TodoDao {
 
+    /**
+     * Fetches all todos from the database
+     * @return
+     */
     @Query("SELECT * FROM Todo")
     LiveData<List<Todo>> getAllTodoItems();
 
+    /**
+     * Adds a todo to the databas.
+     * @param todo
+     */
     @Insert(onConflict = REPLACE)
     void addTodo(Todo todo);
 

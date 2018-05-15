@@ -41,6 +41,11 @@ public class AddTodoFragment extends Fragment implements View.OnClickListener {
         return view;
     }
 
+    /**
+     * Responds on button clicks and adds todos.
+     * @param view
+     */
+
     @Override
     public void onClick(View view) {
         if (title.getText() == null || content.getText() == null) {

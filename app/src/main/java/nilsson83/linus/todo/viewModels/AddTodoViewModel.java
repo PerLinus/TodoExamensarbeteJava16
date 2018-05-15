@@ -28,6 +28,10 @@ public class AddTodoViewModel extends AndroidViewModel {
         new AddAsyncTask(todoRoomDatabase).execute(todo);
     }
 
+    /**
+     * Adds the todo to the database as a background operation wihtout having to
+     * manipulate threads and/or handlers.
+     */
     private static class AddAsyncTask extends AsyncTask<Todo, Void, Void> {
 
         private TodoRoomDatabase db;

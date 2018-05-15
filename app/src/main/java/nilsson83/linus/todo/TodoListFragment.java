@@ -32,6 +32,13 @@ public class TodoListFragment extends Fragment implements View.OnClickListener {
     private ITodoListActivity iTodoListActivity;
 
 
+    /**
+     * Sets the view with the lists of todos in the RecyclerView.
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return
+     */
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -71,55 +78,14 @@ public class TodoListFragment extends Fragment implements View.OnClickListener {
         }
     }
 
-
+    /**
+     * Creates a instance of ITodoListActivity when the fragment is added to its activity.
+     * @param context
+     */
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
         iTodoListActivity = (ITodoListActivity) getActivity();
     }
-
-    /*@Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        AddTodoViewModel addTodoViewModel = ViewModelProviders.of(this).get(AddTodoViewModel.class);
-        addTodoViewModel.addTodo(new Todo("Test", "test"));
-        addTodoViewModel.addTodo(new Todo("Test1", "test1"));
-        addTodoViewModel.addTodo(new Todo("Test2", "test2"));
-        addTodoViewModel.addTodo(new Todo("Test3", "test3"));
-    }*/
-
-   /* @Override
-    public void onClick(View view) {
-        Fragment fragment = null;
-
-        if (view.getId() == R.id.fab_create_todo) {
-            fragment = new AddTodoFragment();
-            replaceFragment(fragment);
-        } else {
-            Todo todo = (Todo) view.getTag();
-            fragment = new TodoFragment();
-            replaceFragment(fragment);
-        }
-
-       *//* switch (view.getId()) {
-            case R.id.todo_item:
-                fragment = new TodoFragment();
-                replaceFragment(fragment);
-                break;
-
-            case R.id.fab_create_todo:
-                fragment = new AddTodoFragment();
-                replaceFragment(fragment);
-                break;
-        }*//*
-    }*/
-
-   /* public void replaceFragment(Fragment fragment) {
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.replace(R.id.test, fragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
-    }*/
 
 }

@@ -14,6 +14,11 @@ public abstract class TodoRoomDatabase extends RoomDatabase {
 
     private static TodoRoomDatabase INSTANCE;
 
+    /**
+     * Gives an instance of the created databse.
+     * @param context
+     * @return
+     */
     public static TodoRoomDatabase getDatabase(Context context) {
            if (INSTANCE == null) {
                INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
@@ -23,6 +28,10 @@ public abstract class TodoRoomDatabase extends RoomDatabase {
            return INSTANCE;
     }
 
+    /**
+     * Gives access to the methods in TodoDao.
+     * @return
+     */
     public abstract TodoDao todoModel();
 
 }

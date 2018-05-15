@@ -33,7 +33,12 @@ public class TodoListRecyclerViewAdapter extends RecyclerView.Adapter<TodoListRe
         this.clickHandler = clickHandler;
     }
 
-
+    /**
+     * Called when RecyclerView needs a new RecyclerView.ViewHolder of the given type to represent an item.
+     * @param viewGroup
+     * @param viewType
+     * @return
+     */
     @NonNull
     @Override
     public TodoListAdapterViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
@@ -41,6 +46,12 @@ public class TodoListRecyclerViewAdapter extends RecyclerView.Adapter<TodoListRe
                 .inflate(R.layout.todo_list_item, viewGroup, false));
     }
 
+    /**
+     * Called by RecyclerView to display the data at the specified position. Sets a tag
+     * on the todo so other parts of the application can find it.
+     * @param holder
+     * @param position
+     */
     @Override
     public void onBindViewHolder(@NonNull TodoListRecyclerViewAdapter.TodoListAdapterViewHolder holder, int position) {
         Todo todo = todos.get(position);
@@ -62,6 +73,9 @@ public class TodoListRecyclerViewAdapter extends RecyclerView.Adapter<TodoListRe
         notifyDataSetChanged();
     }
 
+    /**
+     * Describes the todo and its place in the list of todos.
+     */
     public class TodoListAdapterViewHolder extends RecyclerView.ViewHolder {
 
         private TextView textViewTodoListItem;

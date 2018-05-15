@@ -5,4 +5,11 @@
     <string name="fragment_todo">FragmentTodo</string>
     <string name="fragment_add_todo">FragmentAddTodo</string>
 
+    <string name="passwords">Passwords</string>
+    <string name="shopping">Shopping</string>
+    <string name="todo">Todo</string>
+    <string name="name">Name</string>
+    <string name="content">Content</string>
+    <string name="add">Add</string>
+
 </resources>

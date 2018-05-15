@@ -17,7 +17,7 @@ import nilsson83.linus.todo.sqlite.TodoRoomDatabase;
 
 public class TodoListViewModel extends AndroidViewModel {
 
-    private final LiveData<List<Todo>> todoList;
+    private LiveData<List<Todo>> todoList;
     private Todo todo;
 
     private TodoRoomDatabase todoRoomDatabase;
